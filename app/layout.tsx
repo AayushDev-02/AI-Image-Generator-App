@@ -1,4 +1,5 @@
 import Header from '@/components/Header'
+import PromptInput from '@/components/PromptInput'
 import '../styles/global.css'
 
 export const metadata = {
@@ -13,11 +14,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className='bg-black'>
+      <body className='bg-primary'>
         {/* Header */}
         <Header/>
 
         {/* Prompt Input */}
+        <PromptInput/>
         {children}
         </body>
     </html>
